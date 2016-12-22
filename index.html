@@ -86,6 +86,7 @@
         opacity: .8;
       }
     </style>
+    <!--
     <h1>Current Site html</h1>
     <div class="newsletter-block">
       <div class="newsletter-form-body">
@@ -119,24 +120,35 @@
 
       </div>
     </div>
-
+    -->
 
     <h1>Embedded form</h1>
     <!--[if lte IE 8]>
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
     <![endif]-->
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
-    <script>
-      hbspt.forms.create({ 
-        css: '',
-        portalId: '2268345',
-        formId: '95ba7ae7-a026-40f2-b345-865a19644dbb'
-      });
-    </script>
+    <div class="js-hubspot-form">
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+      <script>
+        hbspt.forms.create({ 
+          css: '',
+          portalId: '2268345',
+          formId: '95ba7ae7-a026-40f2-b345-865a19644dbb'
+        });
+      </script>
+    </div>
 
     <style>
     .hbspt-form {
-      display: inline-block;
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 840px;
+    }
+
+    .hs-richtext h3 strong {
+      font-weight: 400 !important;
+      padding: 20px 30px 30px;
+      display: block;
     }
 
     input.hs-input[type=checkbox],
@@ -230,7 +242,59 @@
 
     select.hs-input,
     input.hs-input[type=file] {
-        height: 27px
+        height: 49px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        border-radius: 0;
+        position: relative;
+    }
+
+    .hs_organization_type .input {
+      position: relative;
+    }
+
+   .hs_organization_type .input:before {
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid black;
+        content: '';
+        height: 0;
+        margin-top: -3px;
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        width: 0;
+        z-index: 1;
+    }
+
+    .hs-form-booleancheckbox label {
+      text-align: center !important;
+    }
+
+    .hs-form-field {
+      position: relative;
+    }
+
+    .hs-form-field > label {
+      position: absolute;
+      height: 16px;
+      margin: 0;
+      top: 17px;
+    }
+
+    .form-columns-2 .input,
+    .form-columns-3 .input {
+      padding: 0 9px 0 15px;
+      margin-right: 0 !important;
+    }
+
+    .hs-error-msgs {
+      padding-left: 16px !important;
+      padding-top: 6px;
+    }
+
+    .hs_newsletter.field.hs-form-field {
+      margin-bottom: 0 !important;
     }
 
     select[multiple].hs-input {
@@ -983,7 +1047,6 @@
     .hs-form .hs-input,
     .hs-form textarea.hs-input {
         box-sizing: border-box;
-        max-width: 500px;
         width: 100%;
     }
 
@@ -1220,7 +1283,7 @@
         border: 0;
         padding: 0;
         margin: 0;
-        max-width: 500px
+        max-width: none;
     }
 
     .hs-form fieldset.form-columns-1 .hs-input {
@@ -1246,7 +1309,7 @@
     }
 
     .hs-form fieldset.form-columns-3 .hs-form-field {
-        width: 32.7%;
+        width: 33.3333%;
         float: left
     }
 
@@ -1357,53 +1420,18 @@
 
     </style>
 
-    <div class="hbspt-form" id="hbspt-form-1482235325359">
-        <form novalidate="" accept-charset="UTF-8" action="https://forms.hubspot.com/uploads/form/v2/2268345/67bee630-2cf6-430a-b637-7691a0615875" enctype="multipart/form-data" id="hsForm_67bee630-2cf6-430a-b637-7691a0615875" method="POST" class="hs-form stacked" data-form-id="67bee630-2cf6-430a-b637-7691a0615875" data-portal-id="2268345" data-reactid=".hbspt-forms-0">
-            <fieldset class="form-columns-3" data-reactid=".hbspt-forms-0.0:$0">
-                <div class="hs-richtext" data-reactid=".hbspt-forms-0.0:$0.0">Get the latest news and updates from Noteworth.</div>
-                <div class="hs_firstname field hs-form-field" data-reactid=".hbspt-forms-0.0:$0.1:$firstname">
-                    <label class="" placeholder="Enter your First Name" for="firstname-67bee630-2cf6-430a-b637-7691a0615875" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.0"><span data-reactid=".hbspt-forms-0.0:$0.1:$firstname.0.0">First Name</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.0.1">*</span>
-                    </label>
-                    <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.1"></legend>
-                    <div class="input" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.$firstname">
-                        <input id="firstname-67bee630-2cf6-430a-b637-7691a0615875" class="hs-input" type="text" name="firstname" required="" value="" placeholder="" data-reactid=".hbspt-forms-0.0:$0.1:$firstname.$firstname.0">
-                    </div>
-                </div>
-                <div class="hs_lastname field hs-form-field" data-reactid=".hbspt-forms-0.0:$0.1:$lastname">
-                    <label class="" placeholder="Enter your Last Name" for="lastname-67bee630-2cf6-430a-b637-7691a0615875" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.0"><span data-reactid=".hbspt-forms-0.0:$0.1:$lastname.0.0">Last Name</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.0.1">*</span>
-                    </label>
-                    <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.1"></legend>
-                    <div class="input" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.$lastname">
-                        <input id="lastname-67bee630-2cf6-430a-b637-7691a0615875" class="hs-input" type="text" name="lastname" required="" value="" placeholder="" data-reactid=".hbspt-forms-0.0:$0.1:$lastname.$lastname.0">
-                    </div>
-                </div>
-                <div class="hs_email field hs-form-field" data-reactid=".hbspt-forms-0.0:$0.1:$email">
-                    <label class="" placeholder="Enter your Email" for="email-67bee630-2cf6-430a-b637-7691a0615875" data-reactid=".hbspt-forms-0.0:$0.1:$email.0"><span data-reactid=".hbspt-forms-0.0:$0.1:$email.0.0">Email</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.0:$0.1:$email.0.1">*</span>
-                    </label>
-                    <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$0.1:$email.1"></legend>
-                    <div class="input" data-reactid=".hbspt-forms-0.0:$0.1:$email.$email">
-                        <input id="email-67bee630-2cf6-430a-b637-7691a0615875" class="hs-input" type="email" name="email" required="" placeholder="" value="" data-reactid=".hbspt-forms-0.0:$0.1:$email.$email.0">
-                    </div>
-                </div>
-            </fieldset>
-            <fieldset class="form-columns-1" data-reactid=".hbspt-forms-0.0:$1">
-                <div class="hs_lifecyclestage field hs-form-field" style="display:none;" data-reactid=".hbspt-forms-0.0:$1.1:$lifecyclestage">
-                    <label class="" placeholder="Enter your Lifecycle Stage" for="lifecyclestage-67bee630-2cf6-430a-b637-7691a0615875" data-reactid=".hbspt-forms-0.0:$1.1:$lifecyclestage.0"><span data-reactid=".hbspt-forms-0.0:$1.1:$lifecyclestage.0.0">Lifecycle Stage</span>
-                    </label>
-                    <legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.0:$1.1:$lifecyclestage.1"></legend>
-                    <div class="input" data-reactid=".hbspt-forms-0.0:$1.1:$lifecyclestage.$lifecyclestage">
-                        <input name="lifecyclestage" class="hs-input" type="hidden" value="subscriber" data-reactid=".hbspt-forms-0.0:$1.1:$lifecyclestage.$lifecyclestage.0">
-                    </div>
-                </div>
-            </fieldset>
-            <div class="hs_submit" data-reactid=".hbspt-forms-0.2">
-                <div class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.2.0"></div>
-                <div class="actions" data-reactid=".hbspt-forms-0.2.1">
-                    <input type="submit" value="Sign Up" class="hs-button primary large" data-reactid=".hbspt-forms-0.2.1.0">
-                </div>
-            </div>
-            <input name="hs_context" type="hidden" value="{&quot;rumScriptExecuteTime&quot;:1783.6850000000002,&quot;rumServiceResponseTime&quot;:2442.8650000000002,&quot;rumFormRenderTime&quot;:362.09000000000015,&quot;rumTotalRequestTime&quot;:350.14999999999964,&quot;css&quot;:&quot;&quot;,&quot;pageUrl&quot;:&quot;https://melyssa-brown-ff55.squarespace.com/continuously&quot;,&quot;pageTitle&quot;:&quot;Continuous Clarity. Connected Care. — Noteworth&quot;,&quot;source&quot;:&quot;FormsNext-static-1.399&quot;,&quot;isHostedOnHubspot&quot;:false,&quot;timestamp&quot;:1482235325812,&quot;userAgent&quot;:&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.98 Safari/537.36&quot;,&quot;referrer&quot;:&quot;&quot;,&quot;hutk&quot;:&quot;d9a573967cb4bcaa214cd9035fc79627&quot;,&quot;originalEmbedContext&quot;:{&quot;css&quot;:&quot;&quot;,&quot;portalId&quot;:&quot;2268345&quot;,&quot;formId&quot;:&quot;67bee630-2cf6-430a-b637-7691a0615875&quot;,&quot;target&quot;:&quot;#hbspt-form-1482235325359&quot;},&quot;recentFieldsCookie&quot;:{},&quot;boolCheckBoxFields&quot;:&quot;&quot;,&quot;dateFields&quot;:&quot;&quot;,&quot;smartFields&quot;:{},&quot;urlParams&quot;:{},&quot;formValidity&quot;:{},&quot;correlationId&quot;:&quot;b0468a19-5b58-4934-9343-c9c8574f2803&quot;,&quot;disableCookieSubmission&quot;:false}" data-reactid=".hbspt-forms-0.3">
-        </form>
+    <div class="js-hubspot-form">
+      <!--[if lte IE 8]>
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+      <![endif]-->
+      <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+      <script>
+        hbspt.forms.create({ 
+          css: '',
+          portalId: '2268345',
+          formId: '67bee630-2cf6-430a-b637-7691a0615875'
+        });
+      </script>
     </div>
   </body>
 </html>
